@@ -4,12 +4,12 @@ def factors(number):
     for i in range(1,number+1):
         if number%i==0:
             factoring.append(i)
-    return factoroing
+    return factoring
 
-def gcf(a,b):
+def lcf(num1,num2):
     lcf=1
-    smaller = min(a,b)
+    smaller = min(num1,num2)
     for i in range(1,smaller+1):
-        if a%i==0 and b%i==0:
+        if num1%i==0 and num2%i==0:
             lcf=i
     return lcf
